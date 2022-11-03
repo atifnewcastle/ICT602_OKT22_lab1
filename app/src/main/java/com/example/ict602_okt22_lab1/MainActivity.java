@@ -37,4 +37,13 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(this, "HI! welcome bro"+ count++, Toast.LENGTH_SHORT);
         toast.show();
     }
+
+    public void replaceText(View view){
+
+        String text = etName.getText().toString();
+        tvMessage.setText("Welcome!" + text);
+
+        Toast toast = Toast.makeText(this, "HI! welcome bro"+ count++, Toast.LENGTH_SHORT);
+        toast.show();
+    }
 }
